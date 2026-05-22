@@ -1,0 +1,1 @@
+witness ObservedVersion(): Uint<32>;

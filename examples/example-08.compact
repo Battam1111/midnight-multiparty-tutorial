@@ -1,0 +1,18 @@
+import CompactStandardLibrary;
+
+export sealed ledger threshold: Uint<32>;
+export ledger memberCount: Uint<32>;
+export ledger stateVersion: Uint<32>;
+
+export sealed ledger joined: Map<Bytes<32>, Boolean>;
+export sealed ledger commitments: Map<Bytes<32>, Bytes<32>>;
+export ledger approvalNonce: Map<Bytes<32>, Uint<32>>;
+
+witness JoinRequest(): [Bytes<32>, Bytes<32>, Uint<32>];
+witness ApprovalRequest(): [Bytes<32>, Bytes<32>, Uint<32>, Uint<32>];
+
+export circuit initialize(t: Uint<32>): [] {
+  threshold = t;
+  memberCount = 0;
+  stateVersion = 0;
+}

@@ -1,0 +1,9 @@
+export circuit approve(): [] {
+  const observedVersion = ObservedVersion();
+
+  // Constrain observedVersion == stateVersion.
+  // Read and validate the caller's party state.
+  // Update approval-related state.
+  // Increment the caller's approvalNonce.
+  // Increment stateVersion.
+}

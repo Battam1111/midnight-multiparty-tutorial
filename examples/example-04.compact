@@ -1,0 +1,12 @@
+export circuit join(): [] {
+  const [partyId, commitment, observedVersion] = JoinRequest();
+
+  // The circuit should constrain observedVersion against stateVersion.
+  // It should also ensure that the participant has not already joined,
+  // then write the new values into the ledger maps and increment:
+  // - memberCount
+  // - stateVersion
+  //
+  // Consult the current Compact map-access documentation for the exact
+  // syntax of reading and writing Map<K, V> entries.
+}

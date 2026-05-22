@@ -1,0 +1,15 @@
+multi-party-treasury/
+├─ contracts/
+│  └─ treasury.compact
+├─ client/
+│  ├─ join.ts
+│  ├─ approve.ts
+│  └─ shared.ts
+├─ tests/
+│  ├─ treasury.initialize.test.ts
+│  ├─ treasury.join.test.ts
+│  ├─ treasury.concurrent-join.test.ts
+│  ├─ treasury.approve.test.ts
+│  └─ treasury.stale-proof.test.ts
+├─ package.json
+└─ README.md

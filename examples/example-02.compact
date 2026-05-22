@@ -1,0 +1,5 @@
+export circuit initialize(t: Uint<32>): [] {
+  threshold = t;
+  memberCount = 0;
+  stateVersion = 0;
+}
